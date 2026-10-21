@@ -1,11 +1,11 @@
-# 플랫폼별 안내
+# 플랫폼 적용 범위
 
-공통 컴포넌트 규칙은 [컴포넌트](../components/README.md)에 정의합니다. 이 영역에는 플랫폼별 차이와 구현 연결만 적습니다.
+공통 명세는 사용 기준을 정의한다. API·치수·기본값은 확인한 플랫폼 버전에만 적용한다. 명세 버전과 라이브러리 버전은 별개다.
 
-| 플랫폼 | 구현 저장소 | 안내 |
-| --- | --- | --- |
-| Web | [bezier-react](https://github.com/channel-io/bezier-react) | [Web](web/README.md) |
-| iOS | [BezierSwift](https://github.com/channel-io/BezierSwift) | [iOS](ios/README.md) |
-| Android | [bezier-compose](https://github.com/channel-io/bezier-compose) | [Android](android/README.md) |
+| 플랫폼  | 확인 범위                                                                          | 안내                         |
+| ------- | ---------------------------------------------------------------------------------- | ---------------------------- |
+| Web     | @channel.io/bezier-react@4.0.0-next.15 /beta의 Button·IconButton·Spinner 소스 대조 | [Web](web/README.md)         |
+| iOS     | 구현 대조 전                                                                       | [iOS](ios/README.md)         |
+| Android | 구현 대조 전                                                                       | [Android](android/README.md) |
 
-현재는 플랫폼별 작성 공간만 준비했습니다. 구현의 API·지원 여부·명세 호환성은 아직 확인하거나 등록하지 않았습니다.
+‘미확인’은 ‘미구현’이 아니다. Web의 API 이름·값을 모바일에 그대로 적용하지 않는다. 플랫폼별 검증 내용을 PR로 제안할 수 있다.
